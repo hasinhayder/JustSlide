@@ -1,21 +1,23 @@
 /**
- * Created by storyteller on 7/3/14.
+ * JustSlide by Hasin Hayder
+ * Licensed under MIT License
+ * Release Date: 3rd July, 2014
+ * Version 0.1
  */
 (function($){
-    "just strict";
+    "use strict";
     var container;
     var defaults = {
         fullWidth:"off",
-        animationDuration:"1s",
         opacity:0.6,
         imageWidth:800,
         gap:100
     };
 
-
     $.fn.justSlide = function(options){
 
         container = this;
+        $(this).addClass("jscontainer");
 
         if($(this).length<=0) return false;
         var opts = $.extend(defaults,options);
@@ -29,11 +31,11 @@
 
         var ml = (cw-opts.imageWidth)/2
 
-        $(this).find("ul li").css({
+        $(this).find("ul.js li").css({
             marginRight:opts.gap
         });
 
-        $(this).find("ul").css({
+        $(this).find("ul.js").css({
             marginLeft:ml
         });
 
@@ -42,14 +44,14 @@
             $(this).css({
                 width:opts.imageWidth,
                 height:"auto"
-            })
-        })
+            });
+        });
 
         $(this).find("li>img").on("click",function () {
             var index = $(this).data("index");
             var newlm = ml - index * (opts.imageWidth+opts.gap) - index*3; //new left margin value
 
-            $(container).find("ul.ls").css({
+            $(container).find("ul.js").css({
                 marginLeft: (newlm)
             });
 
@@ -61,10 +63,6 @@
                 opacity: "1"
             });
         });
-
-    }
-
-    $.fn.clickHandler = function(){
 
     }
 
