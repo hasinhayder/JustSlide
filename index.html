@@ -11,6 +11,8 @@
             list-style-type: none;
             width: 30000px;
             -webkit-transition: all 1s;
+            -moz-transition:all 1s;
+            transition:all 1s;
         }
 
         ul.ls li {
@@ -19,20 +21,23 @@
             cursor: pointer;
         }
 
-        ul.ls li img {
-            width: 800px;
-            height: auto;
-            -webkit-transition: opacity 1s;
-            opacity: 0.6;
-        }
-
         ul.ls li:first-of-type img {
             opacity: 1;
         }
 
+        ul.ls li img {
+            width: 800px;
+            height: auto;
+            border-radius: 2px;
+
+            -webkit-transition: opacity 1s;
+            -moz-transition: opacity 1s;
+            transition: opacity 1s;
+            opacity: 0.6;
+        }
+
         .lscontainer {
             overflow-x: hidden;
-            position: relative;
             width: 100%;
         }
 
