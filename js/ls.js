@@ -5,31 +5,31 @@
     "use strict"
     $(document).ready(function () {
 
-        var cw = $("#leanslider").width(); //container width
+        var cw = $("#justslider").width(); //container width
         var iw = 800; //image width
         var ns = cw - iw; //negative space
         var lm = ns / 2; //left margin
         var mr=100; //margin-right of each li
 
 
-        $("#leanslider ul.ls").css({
+        $("#justslider ul.ls").css({
             marginLeft: lm
         });
 
 
-        $("#leanslider li>img").each(function (i) {
+        $("#justslider li>img").each(function (i) {
             $(this).data("index", i);
         })
 
-        $("#leanslider li>img").bind("click", function () {
+        $("#justslider li>img").bind("click", function () {
             var index = $(this).data("index");
             var newlm = lm - index * (iw+mr); //new left margin value
 
-            $("#leanslider ul.ls").css({
+            $("#justslider ul.ls").css({
                 marginLeft: newlm
             });
 
-            $("#leanslider li>img").css({
+            $("#justslider li>img").css({
                 opacity: "0.6"
             });
 
