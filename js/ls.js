@@ -9,7 +9,7 @@
         var iw = 800; //image width
         var ns = cw - iw; //negative space
         var lm = ns / 2; //left margin
-        var mr=100; //margin-right of each li
+        var mr = 100; //margin-right of each li
 
 
         $("#justslider ul.ls").css({
