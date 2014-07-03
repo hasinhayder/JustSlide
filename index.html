@@ -20,7 +20,7 @@
 
         ul.ls li {
             display: inline;
-            margin-right: 100px;
+            /*margin-right: 100px;*/
             cursor: pointer;
         }
 
@@ -29,7 +29,9 @@
         }
 
         ul.ls li img {
-            width: 800px;
+            /*width: 800px;*/
+            padding:0px;
+            margin:0px;
             height: auto;
             border-radius: 2px;
 
@@ -103,14 +105,16 @@
     <p>brought to you by <a target="_blank" href='http://twitter.com/hasin'>@hasin</a> from <a target="_blank" href='http://bit.ly/themebucket'>themebucket</a></p>
 </div>
 
-<script type="text/javascript" src="js/ls.js"></script>
+<!--<script type="text/javascript" src="js/ls.js"></script>-->
 <script type="text/javascript" src="js/justslide.jquery.js"></script>
 <script type="text/javascript">
-//    (function($){
-//        $(document).ready(function(){
-//           $(".lscontainer").justSlide();
-//        });
-//    })(jQuery)
+    (function($){
+        $(document).ready(function(){
+           $(".lscontainer").justSlide({
+               fullWidth:"on"
+           });
+        });
+    })(jQuery);
 </script>
 </body>
 </html>
