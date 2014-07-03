@@ -1,0 +1,37 @@
+ul.js {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    width: 30000px;
+    -webkit-transition: all 1s;
+    -moz-transition:all 1s;
+    transition:all 1s;
+}
+
+ul.js li {
+    display: inline;
+    /*margin-right: 100px;*/
+    cursor: pointer;
+}
+
+ul.js li:first-of-type img {
+    opacity: 1;
+}
+
+ul.js li img {
+    /*width: 800px;*/
+    padding:0px;
+    margin:0px;
+    height: auto;
+    border-radius: 2px;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    transition: opacity 1s;
+    opacity: 0.6;
+}
+
+.jscontainer {
+    overflow-x: hidden;
+    width: 100%;
+}
