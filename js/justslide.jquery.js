@@ -22,10 +22,10 @@
         if ($(this).length <= 0) return false;
         var opts = $.extend(defaults, options);
 
-        var cw = $(this).width();
+        var cw = $(this).width(); //container width
 
         if (opts.fullWidth == "on") {
-            opts.gap = Math.round(cw * 0.08); //10%
+            opts.gap = Math.round(cw * 0.08); //8%
             opts.imageWidth = Math.round(cw * 0.55);
         }
 
