@@ -29,7 +29,7 @@
             opts.imageWidth = Math.round(cw * 0.55);
         }
 
-        var ml = (cw - opts.imageWidth) / 2 ;
+        var ml = (cw - opts.imageWidth) / 2 ; //margin-left value for centering the first <li> item
 
         $(this).find("ul.js li").css({
             marginRight: opts.gap
