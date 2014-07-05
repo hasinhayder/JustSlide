@@ -9,7 +9,8 @@ ul.js {
 }
 
 ul.js li {
-    display: inline;
+    /*display: inline;*/ /* transition : transform; is not working with display :inline; */
+    float: left;
     /*margin-right: 100px;*/
     cursor: pointer;
 }

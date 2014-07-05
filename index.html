@@ -70,7 +70,10 @@
     (function($){
         $(document).ready(function(){
            $("#justslide").justSlide({
-               fullWidth:"on"
+               fullWidth:"on",
+               effect : "async",
+               easing : 'ease-in-out',
+               speed : '0.4s'
            });
         });
     })(jQuery);
